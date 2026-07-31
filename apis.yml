@@ -1,7 +1,25 @@
 aid: myxt
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/myxt.png
 name: Myxt
-description: 'Myxt is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Myxt is a consumer music streaming platform operated by Paper Phones
+  Inc., built around the tagline "Musicians. Fans. Nothing in between." Instead of
+  forced monthly subscriptions, Myxt uses an "unlock" model that lets artists monetize
+  audio, session files, project files, images, and videos directly, while fans support
+  creators without a recurring commitment and can chat with the artist after each unlock.
+  Native iOS and Android apps extend access beyond the web. Surfaced as a portfolio
+  company of Accel and added to the API Evangelist network; during enrichment no public
+  API, developer portal, or SDK surface was found.'
 url: https://raw.githubusercontent.com/api-evangelist/myxt/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Music
+- Streaming
+- Media
+- Entertainment
+- Creator Economy
+- Mobile Apps
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/myxt-domain-security.yml
 - type: Website
   url: https://myxt.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
